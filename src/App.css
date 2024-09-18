@@ -1,0 +1,123 @@
+html {
+  -webkit-tap-highlight-color: #ffffff00;
+}
+.app {
+  text-align: center;
+  /* background-image: url("./images/weltraum2.webp");
+  background-size: cover;
+  background-position: center center; */
+  color: rgb(255, 255, 255);
+  height: 100vh;
+}
+
+/* .soundButton {
+  background-color: rgb(136, 47, 47);
+  border: none;
+  border-radius: 5px;
+  color: rgb(254, 254, 254);
+  height: 30px;
+  width: 140px;
+  margin: 10px;
+  font-size: 2rem;
+} */
+
+/* .navButtons {
+  width: 350px;
+} */
+/* .darkmode {
+  font-size: 3rem;
+  margin-top: 70px;
+  color: rgb(255, 255, 255);
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 5px;
+} */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container__quiz {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  color: white;
+  margin: 5px;
+}
+
+.quiz__card {
+  /* animation: example 0.5s linear; */
+  cursor: pointer;
+  font-size: 8rem;
+  border-radius: 20px;
+  /* background-color: rgba(255, 255, 255, 0); */
+  padding: 9px;
+  max-height: 170px;
+  width: 140px;
+  margin: 5px;
+}
+.suche {
+  max-height: 100%;
+  max-width: 380px;
+  font-size: 8rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+.suche__bilder {
+  margin-top: 0px;
+  width: 100%;
+  max-height: 230px;
+  border: 5px solid black;
+}
+.Buchstaben {
+  color: rgb(56, 42, 42);
+  text-align: center;
+  border-radius: 20px;
+  background-color: white;
+  border: 5px solid black;
+}
+/* @keyframes example {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  75% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+} */
+
+.suche {
+  font-size: 5rem;
+  cursor: pointer;
+}
+
+.finalResults {
+  height: 90vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.emoji {
+  height: 90px;
+  animation: emoji 2s linear;
+}
+@keyframes emoji {
+  0% {
+    transform: translate(-100px, 0px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
