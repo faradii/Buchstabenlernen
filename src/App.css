@@ -3,35 +3,14 @@ html {
 }
 .app {
   text-align: center;
-  /* background-image: url("./images/weltraum2.webp");
+  background-image: url("./images/background.jpg");
   background-size: cover;
-  background-position: center center; */
-  color: rgb(255, 255, 255);
+  background-position: center center;
   height: 100vh;
+  user-select: none; /* Verhindert das Selektieren und Kopieren von Text */
+  cursor: default;
 }
 
-/* .soundButton {
-  background-color: rgb(136, 47, 47);
-  border: none;
-  border-radius: 5px;
-  color: rgb(254, 254, 254);
-  height: 30px;
-  width: 140px;
-  margin: 10px;
-  font-size: 2rem;
-} */
-
-/* .navButtons {
-  width: 350px;
-} */
-/* .darkmode {
-  font-size: 3rem;
-  margin-top: 70px;
-  color: rgb(255, 255, 255);
-  border: none;
-  background-color: rgba(255, 255, 255, 0);
-  border-radius: 5px;
-} */
 .container {
   display: flex;
   flex-direction: column;
@@ -49,11 +28,10 @@ html {
 }
 
 .quiz__card {
-  /* animation: example 0.5s linear; */
+  animation: example 0.5s linear;
   cursor: pointer;
   font-size: 8rem;
   border-radius: 20px;
-  /* background-color: rgba(255, 255, 255, 0); */
   padding: 9px;
   max-height: 170px;
   width: 140px;
@@ -72,16 +50,16 @@ html {
   margin-top: 0px;
   width: 100%;
   max-height: 230px;
-  border: 5px solid black;
+  border: 5px solid rgb(237, 210, 103);
 }
 .Buchstaben {
   color: rgb(56, 42, 42);
   text-align: center;
   border-radius: 20px;
   background-color: white;
-  border: 5px solid black;
+  border: 5px solid rgb(244, 174, 174);
 }
-/* @keyframes example {
+@keyframes example {
   0% {
     transform: translateX(0px);
   }
@@ -94,7 +72,7 @@ html {
   100% {
     transform: translateX(0);
   }
-} */
+}
 
 .suche {
   font-size: 5rem;
@@ -109,12 +87,12 @@ html {
 }
 
 .emoji {
-  height: 90px;
+  height: 250px;
   animation: emoji 2s linear;
 }
 @keyframes emoji {
   0% {
-    transform: translate(-100px, 0px);
+    transform: translate(100px, 0px);
   }
 
   100% {

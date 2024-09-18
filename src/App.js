@@ -1,8 +1,6 @@
 import "./App.css";
 import { useState, useEffect } from "react";
 
-import background from "./images/background.webp";
-
 import rocket from "./images/rocket.png";
 
 import rocketsound from "./sounds/rocketsound.mp3";
@@ -299,24 +297,15 @@ function App() {
       {finalResults ? (
         <div className="finalResults">
           <img src={rocket} className="emoji" alt="rocket" />
-          <img
-            src={background}
-            style={{
-              width: "100vw",
-              height: "100vh",
-              zIndex: -1,
-              position: "absolute",
-            }}
-            alt="background"
-          />
+
           <h1
             style={{
               fontSize: "3rem",
               cursor: "pointer",
-              background: "#FD3103",
+              background: "#EFD128FF",
               borderRadius: "20px",
               padding: "5px",
-              border: "5px solid black",
+              border: "5px solid white",
               width: "250px",
               marginLeft: "40px",
             }}
