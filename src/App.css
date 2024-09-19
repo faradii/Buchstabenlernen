@@ -3,14 +3,37 @@ html {
 }
 .app {
   text-align: center;
-  background-image: url("./images/background.jpg");
+  background-image: url("./images/weltraum2.webp");
   background-size: cover;
-  background-position: center center;
+  background-position: center top;
+  color: white;
   height: 100vh;
   user-select: none; /* Verhindert das Selektieren und Kopieren von Text */
   cursor: default;
 }
 
+.soundButton {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-radius: 5px;
+  color: rgb(254, 254, 254);
+  height: 30px;
+  width: 140px;
+  margin: 10px;
+  font-size: 2rem;
+}
+
+.navButtons {
+  width: 350px;
+}
+.darkmode {
+  font-size: 3rem;
+  margin-top: 70px;
+  color: rgb(255, 255, 255);
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 5px;
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -32,6 +55,7 @@ html {
   cursor: pointer;
   font-size: 8rem;
   border-radius: 20px;
+  /* background-color: rgba(255, 255, 255, 0); */
   padding: 9px;
   max-height: 170px;
   width: 140px;
@@ -50,14 +74,12 @@ html {
   margin-top: 0px;
   width: 100%;
   max-height: 230px;
-  border: 5px solid rgb(237, 210, 103);
 }
 .Buchstaben {
   color: rgb(56, 42, 42);
   text-align: center;
   border-radius: 20px;
   background-color: white;
-  border: 5px solid rgb(244, 174, 174);
 }
 @keyframes example {
   0% {
@@ -87,15 +109,25 @@ html {
 }
 
 .emoji {
-  height: 250px;
-  animation: emoji 2s linear;
+  margin-top: 100px;
+  height: 90px;
+
+  animation: emoji 5.5s ease-out;
 }
 @keyframes emoji {
   0% {
-    transform: translate(100px, 0px);
+    transform: translate(0px, 400px) rotateZ(-45deg);
   }
-
+  25% {
+    transform: translate(0px, 200px) rotateZ(-45deg);
+  }
+  50% {
+    transform: translate(0px, 50px) rotateZ(0deg);
+  }
+  75% {
+    transform: translate(0px, 100px) rotateZ(0deg);
+  }
   100% {
-    transform: translate(0px, 0px);
+    transform: translate(0px, 0px) rotateZ(0deg);
   }
 }
