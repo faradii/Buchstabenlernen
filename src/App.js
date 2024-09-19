@@ -235,6 +235,7 @@ function App() {
             </div>
           ) : (
             <div className="container__questions">
+              <p>Finde den Anfangsbuchstaben!</p>
               <div
                 className="suche"
                 onClick={() =>
